@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build && cp -r src netlify/functions/ssr",
+		"build": "tsc && vite build && mkdir -p netlify/functions/ssr && cp -r src netlify/functions/ssr",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
